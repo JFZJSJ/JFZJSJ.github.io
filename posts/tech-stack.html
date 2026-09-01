@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的技术栈与下半年学习路线 · 鸡分拯救世界</title>
+  <meta name="description" content="整理自己在用和想学的技术，立几个能落地的小目标。" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ===== 顶部导航 ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="../index.html">鸡分拯救世界</a>
+      <nav class="site-nav">
+        <a href="../index.html">首页</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back-link" href="../index.html">← 返回首页</a>
+
+    <header class="article-header">
+      <h1 class="article-title">我的技术栈与下半年学习路线</h1>
+      <div class="article-meta">
+        <span>2026-08-20</span>
+        <span>·</span>
+        <span id="reading-time"></span>
+        <div class="tags">
+          <span class="tag">技术</span>
+          <span class="tag">学习</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="prose" id="prose">
+      <p>每过一段时间，我都会把自己的技术栈摊开来看一遍，顺便想想接下来该学什么。
+        整理本身也是一种学习：它逼你诚实地面对「我会什么」和「我其实不会什么」。</p>
+
+      <h2>日常在用的</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>领域</th>
+            <th>工具 / 语言</th>
+            <th>熟练度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>前端基础</td>
+            <td>HTML / CSS / JavaScript</td>
+            <td>★★★☆☆</td>
+          </tr>
+          <tr>
+            <td>脚本工具</td>
+            <td>Python</td>
+            <td>★★★☆☆</td>
+          </tr>
+          <tr>
+            <td>版本管理</td>
+            <td>Git</td>
+            <td>★★☆☆☆</td>
+          </tr>
+          <tr>
+            <td>命令行</td>
+            <td>Bash / PowerShell</td>
+            <td>★★☆☆☆</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>「熟练度」是很主观的打分，但诚实打分比虚假的自信有用得多。</p>
+
+      <h2>下半年想做的几件事</h2>
+
+      <ol>
+        <li><strong>把 JavaScript 的异步彻底吃透</strong>：Promise、async/await、
+          事件循环，不满足于「能用」，要能讲清楚原理。</li>
+        <li><strong>学一点 Node.js</strong>：写几个自动化小脚本，把重复劳动交出去。</li>
+        <li><strong>用这个博客做实验</strong>：比如给文章加搜索、加暗色模式开关。</li>
+        <li><strong>坚持每月至少两篇博文</strong>：写作是思考的磨刀石。</li>
+      </ol>
+
+      <h2>一个小的练习建议</h2>
+
+      <p>学任何新东西，最怕「收藏了就等于学会了」。我的办法是，学完立刻写一个
+        最小的可用例子，比如这样：</p>
+
+      <pre><code>// 读一个文件并统计行数（Node.js）
+const fs = require('fs');
+const text = fs.readFileSync('note.md', 'utf-8');
+const lines = text.split('\n').filter(Boolean);
+console.log(`note.md 共有 ${lines.length} 行非空内容`);</code></pre>
+
+      <p>能跑通、能解释每一行在干什么，才算真正「过了一遍脑子」。</p>
+
+      <blockquote>
+        <p>学习的终点不是「我看过」，而是「我能做出来」。</p>
+      </blockquote>
+
+      <p>目标不多，重在落地。半年后再回来对照这份清单，看看完成了多少。</p>
+    </div>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      © <span data-year>2026</span> 鸡分拯救世界 · 手工搭建
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
